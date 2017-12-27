@@ -185,3 +185,13 @@ header{
 	font-weight: bold;
 	border-left: 10px solid #333;
 }
+
+@font-face {
+   font-family: Lobster;
+   src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face{
+   font-family: "Press Start 2P";
+   src: url(../fonts/PressStart2P-Regular.ttf);
+}

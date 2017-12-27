@@ -623,3 +623,13 @@ input:checked ~ ul{
 .back a {
 	text-decoration: none;
 }
+
+@font-face {
+   font-family: Lobster;
+   src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face{
+   font-family: "Press Start 2P";
+   src: url(../fonts/PressStart2P-Regular.ttf);
+}
