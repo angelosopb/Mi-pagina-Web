@@ -1,0 +1,625 @@
+#Resto{
+	width:  1320px;
+	height: 600px;
+	margin: auto;
+}
+
+/*Aqui empieza el css de la cabecera de la pagina web*/
+header{
+	width: 1320px;
+	height: 125px;
+	border-bottom: 1px solid white;
+}
+
+#logo{
+	width: 550px;
+	height: 125px;
+	/*Las tres siguientes propiedades centran el logo*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background: linear-gradient(85deg, transparent 6%, rgba(50, 50, 50, .7) 25%, rgba(50, 50, 50, .8) 76%, transparent 94%);
+	border-radius: 30%;*/
+	float: left;
+	font-size: 25px;
+	text-align: center;
+	color: #870101;
+	text-shadow: 5px 5px black;
+	font-family: "Press Start 2P";
+}
+
+.menu{
+	width: 680px;
+	height: 125px;
+	float: right;
+}
+
+.menu ul{}
+
+.menu ul li{
+	list-style: none;
+	float: left;
+	margin-top: 35.8px;
+	transition: 0.5s;
+	border-radius: 80%;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	padding: 10px 12px;
+	border: 1px solid #FFFFFF;
+	color: black;
+    background: linear-gradient(0deg, #D8D6D6, #fff);
+	box-shadow: 0 10px 15px rgba(0,0,0,3);
+	font-family: Lobster;
+}
+
+.menu ul li:hover{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.menu ul li a:hover{
+	background: linear-gradient(0deg, #ECEAEA, #B4ABA9);
+	box-shadow: 0 20px 25px rgba(0,0,0,3);
+}
+
+
+/*Aqui empieza el css del cuerpo de la pagina*/
+.cuerpo{
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align:left;
+	width:85%;
+	height: auto;
+	background: rgba(255,255,255,0.7);
+	border-radius: 50px;
+}
+.texto{
+	font-family: 'Lobster';
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	font-size: 20px;
+}
+.texto a{
+	color: #1b1ba7;
+}
+
+.ir-arriba {
+	display:none;
+	border-radius: 100%;
+    padding: 5px;
+    background: #870101;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../img/to-top1.png);
+}
+
+/*Aqui empieza el pie de pagina de la pagina web*/
+footer{
+	border-top: 1px solid white;
+	/*box-shadow: 0px 5px 5px #888, 0px -5px 5px #888;*/
+    width: 1320px;
+    height: auto;
+    padding:5px 0px;
+    clear: both;
+    /*background: linear-gradient(90deg, transparent 5%, rgba(0, 0, 0, .9) 20%, rgba(0, 0, 0, .9) 80%, transparent 95%);*/
+    background: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, .6) 20%, rgba(255, 255, 255, .6) 80%, transparent 95%);
+    text-align: center;
+    color: #fff;
+    text-decoration-color: black;
+}
+
+.copyright{
+	padding-top: 90px;
+    color: black;
+    font-style: italic;
+}
+
+.imagotipo{
+	float: right;
+	margin-right: 20%;
+	margin-top: -17px;
+	border-radius: 50px; 
+}
+
+.imagen{
+	width: 200px;
+	height: 100px;
+}
+
+.final{
+
+}
+
+.final ul{
+	margin-left: 15%;
+}
+
+.final ul li{
+	list-style: none;
+	float: left;
+	padding: 7px;
+	transition: 1s;
+}
+
+.final ul li:hover{
+	transform:rotate(360deg);
+}
+
+.final ul li a {
+	background: #c1c1c1;
+	position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald';
+    display: block;
+    border-radius: 6px;
+   	width: 50px;
+	text-align: center;
+	transform: translate(0, 0);
+	transition: all .2s ease;
+	height:50px;
+	cursor:pointer;
+	overflow:hidden;
+	font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+ 
+.final ul li a:active {
+	transform: translate(0, 3px);
+}
+
+.final ul li a img{
+	margin-top: 12px;
+}
+.facebook{
+    box-shadow: 0px 6px 0px #656363;
+}
+ 
+.facebook:active:hover{ 
+    box-shadow: 0px 2px 0px #293f64;
+    background: #3b5997;
+}
+
+.facebook:hover{
+	box-shadow: 0px 6px 0px #293f64;
+	background: #3b5997;
+}
+
+.twitter{
+    box-shadow: 0px 6px 0px #656363;
+    align-items: center;
+}
+ 
+.twitter:active:hover{ 
+    box-shadow: 0px 2px 0px #2595bb;
+    background: #2ca9e1;
+}
+
+.twitter:hover{
+	box-shadow: 0px 6px 0px #2595bb;
+	background: #2ca9e1;
+}
+
+.instagram{
+    box-shadow: 0px 6px 0px #656363;
+}
+ 
+.instagram:active:hover{ 
+    box-shadow: 0px 2px 0px #931b4b;
+    background: #f76e9c;
+}
+
+.instagram:hover{
+	box-shadow: 0px 6px 0px #931b4b;
+    background: #f76e9c;
+}
+
+.linkedin{
+    box-shadow: 0px 6px 0px #656363;
+}
+ 
+.linkedin:active:hover{ 
+    box-shadow: 0px 2px 0px #005277;
+    background: #0073b2;
+}
+
+.linkedin:hover{
+	box-shadow: 0px 6px 0px #005277;
+	background: #0073b2;
+}
+
+/*Aqui la parte correspondiente a sobre mi*/
+.bloques{
+	border-bottom: 3px solid #047d57;
+	border-radius: 5%;
+}
+
+.apartado{
+	text-align: center;
+	color: #047d57;
+	font-size: 40px;
+	text-shadow: 3px 0px black;
+}
+
+/*Aqui la parte correspondiente a formacion*/
+/*Esta parte usa la clase cuerpo y texto especificada en la parte del cuerpo de las paginas*/
+
+.cuerpo #titulo {
+	padding-top: 25px;
+	font-family: 'Lobster';
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Aqui empieza el css del apartado de conocimientos*/
+.interior{ 
+	display:none; 
+} /* oculta las listas anidadas */
+.interior li p a{
+	list-style: none;
+	color: #1b1ba7;
+}
+input:checked ~ ul{
+	display:block;
+}
+
+.menu_c * { 
+	list-style:none;
+	font-family: 'Lobster';
+	font-size: 20px;
+}
+
+.menu_c li{ 
+	margin-right: 10%;
+	margin-bottom: 5px;
+	line-height:180%;
+}
+
+.menu_c li a{
+	color:#222; 
+	text-decoration:none;
+}
+
+.menu_c li a:before{ 
+	/*content:"\025b8";*/ 
+	color:#ddd; 
+	margin-right:4px;
+}
+
+.menu_c li p:before{
+	content:"\025b8";
+}
+
+.menu_c input[name="list"] {
+	position: absolute;
+	left: -1000em;
+}
+
+.menu_c label:before{ 
+	content:"\025b8"; 
+	margin-right:4px;
+}
+
+.menu_c input:checked ~ label:before{ 
+	content:"\025be";
+}
+
+.menu_c .interior{
+	display: none;
+	padding-top: 15px;
+}
+
+.menu_c input:checked ~ ul{
+	display:block;
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:95%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	transition:0.4s linear;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:185px;
+	font-weight:bold;
+	font-size:17px;
+	color: black;
+	background:#6adcfa;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color: black;
+	color:rgba(0, 0, 0, 0.8);
+}
+
+#borde{
+	border-top: 1px solid black;
+}
+/*Aqui comienza el css del apartado de portafolio*/
+
+.portafolio{
+	width: 100%;
+	height: auto;
+}
+
+.portafolio h1{
+	text-align: center;
+	font-size: 38px;
+	font-family: 'Press Start 2P';
+	color:#870101;
+	text-shadow: 10px 1px black;
+}
+
+.portafolio-container{
+	width:90%;
+	height:auto;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5%;
+    align-items: center;
+}
+
+.proyecto{
+	background: white;
+	border: 4px solid black;
+	width: 40%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	margin: 2%;
+}
+
+.imagen-proyecto{
+	transition: all 0.5s;
+	width:100%;
+	height: 100%;
+}
+
+.texto-proyecto{
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+}
+
+.texto-proyecto p{
+	text-align: justify;
+}
+
+.proyecto:hover .texto-proyecto{
+	transform: translateY(0%);
+}
+
+.proyecto:hover .imagen-proyecto{
+	transform: scale(1.15);
+}
+
+/*Aqui comienza el css del apartado de contacto*/
+/*Parte del formulario*/
+
+#info{
+	width: 35%;
+	height: auto;
+	float: left;
+	display: block;
+	margin-left: 45px;
+	color: white;
+	border-right:  1px solid white;
+}
+
+.img{
+	width: 45px;
+	height: 35px;
+}
+
+#data{
+	float: right;
+	width: 55%;
+	margin-top: 20px;
+}
+
+.formulario{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50px;
+}
+
+.formulario h1{
+	color: #870101;
+	text-align: center;
+	font-family: "Press Start 2P";
+	text-shadow: 3px 3px #efeeee;
+	font-size: 30px;
+}
+
+.formulario_input{
+	display: block;
+	margin-left: 15px;
+	border-radius: 10px;
+}
+
+#datos{
+	width: 100%;
+	float: left;
+	height: auto;
+}
+
+#nombre{
+	width: 40%;
+	height: 20px;
+}
+
+#apellidos{
+	width: 50%;
+	height: 20px;
+	margin-top: 20px;
+}
+
+#email{
+	width: 50%;
+	height: 20px;
+	margin-top: 20px;
+}
+
+#asunto{
+	width: 50%;
+	height: 20px;
+	margin-top: 20px;
+}
+
+#mensaje{
+	width: 80%;
+	margin-top: 20px;
+	margin-left: 15px;
+	border-radius: 10px;
+	resize: none;
+}
+
+#button{
+	width: 35%;
+	height: 27px;
+	margin-top: 10px;
+	margin-left: 27%;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+
+#button:hover{
+	background: #efecec;
+}
+
+#button:active{
+	background: #b3b1b1;
+}
+
+/*Parte de los enlaces a las redes sociales*/
+.enlaces{
+	background: rgba(0,0,0,0.7);
+    height: auto;
+    width: 40%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.enlaces h1{
+	color: #870101;
+	text-align: center;
+	font-family: "Press Start 2P";
+	text-shadow: 3px 3px #efeeee;
+	font-size: 30px;
+}
+
+#derecha1, #derecha2{
+	float: right;
+	margin-right: 50px;
+}
+
+#izquierda1, #izquierda2{
+	float: left;
+	margin-left: 50px;
+}
+
+.flip-container {
+	perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+	margin-left: 10px;
+}
+
+.flip-container, .front, .back {
+	width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Panel frontal */
+.front {
+	background: white;
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* Panel trasero enlace */
+.back {
+	background: white;
+	transform: rotateY(180deg);
+}
+.back h3 {
+	background: black;
+	text-align: center;
+	margin: 0;
+	color: white;
+}
+.back a {
+	text-decoration: none;
+}

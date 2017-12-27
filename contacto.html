@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pbAngel</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Press+Start+2P' rel='stylesheet' type='text/css'>
+		<!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
+	</head>
+	<body background="img/fondos/tablas.jpg">
+		<div id="Resto">
+			<header>
+				<div id="logo">
+					<h1>Ángel Pavón Baeza</h1>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="sobre_mi.html">Sobre mi</a></li>
+						<li><a href="formacion.html">Formación</a></li>
+						<li><a href="conocimientos.html">Conocimientos</a></li>
+						<li><a href="portfolio.html">Portafolio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div class="formulario">
+					<h1>Contáctame</h1>
+					<div id="info">
+						<img src="img/icon/ic_gps.png" alt="gps" width="45px" height="45px">
+						<p>**Périodo Universitario**</p>
+						<p>Ciudad Real, Calle Espino Nº10, 3ºC</p>
+						<p>-----------------------------------</p>
+						<p>**Periodo no lectivo**</p>
+						<p>Puerto Lápice, Calle La Urga Nº8</p>
+						<img class="img" src="img/icon/ic_phone.png" alt="telefono"> 656667247
+						<br>
+						<img class="img" src="img/icon/ic_contacto2.png" alt="correo"> angelpbweb@hotmail.com
+					</div>
+					<div id="data">
+						<form id="datos" action="envio.php" method="post">
+						<input type="text" placeholder="Nombre" class="formulario_input" id="nombre" name="nombre" required>
+						<input type="text" placeholder="Apellidos" class="formulario_input" id="apellidos" name="apellidos">
+						<input type="text" placeholder="Email" class="formulario_input" id="email" name="email" required>
+						<input type="text" placeholder="Asunto" class="formulario_input" id="asunto" name="asunto">
+						<textarea name="mensaje" rows="8" cols="47" id="mensaje" placeholder="Mensaje" required></textarea>
+						<input type="submit" name="button" value="Enviar Mensaje" class="formulario_submit" id="button">
+					</form>
+					</div>
+				</div>
+				<div class="enlaces">
+					<h1>Sígueme!</h1>
+					<div>
+						<div class="flip-container" id="izquierda1" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<img src="img/icon/facebook.png" alt="facebook" width="100%" height="100%">
+								</div>
+								<div class="back">
+									<a href="https://www.facebook.com/angel.pavonbaeza" target="_blank"><img src="img/face.jpg" alt="icono" width="100%" height="85%"><h3>Angel Pavon Baeza</h3></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-container" id="derecha1" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<img src="img/icon/twitter.png" alt="twitter" width="100%" height="100%">
+								</div>
+								<div class="back">
+									<a href="https://twitter.com/angelosopb" target="_blank"><img src="img/twit.jpeg" alt="icono" width="100%" height="85%"><h3>@angelosopb</h3></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="flip-container" id="izquierda2" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<img src="img/icon/instagram.png" alt="instagram" width="100%" height="100%">
+								</div>
+								<div class="back">
+									<a href="https://www.instagram.com/angelosopb/" target="_blank"><img src="img/insta.jpg" alt="icono" width="100%" height="85%"><h3>angel</h3></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-container" id="derecha2" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<img src="img/icon/linkedin.png" alt="linkedin" width="100%" height="100%">
+								</div>
+								<div class="back">
+									<a href="https://www.linkedin.com/in/ángel-pavón-baeza-586011150/" target="_blank"><img src="img/link.jpg" alt="icono" width="100%" height="85%"><h3>Ángel Pavón Baeza</h3></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

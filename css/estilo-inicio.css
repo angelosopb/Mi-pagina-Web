@@ -1,0 +1,187 @@
+body{
+	margin: 0px;
+}
+
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: -webkit-fill-available;
+    margin: 0px;
+    z-index: 0; 
+    padding: 0px;
+}
+
+.cb-slideshow li{
+	list-style: none;
+}
+
+.cb-slideshow li span { 
+    width: 100%;
+    height: -webkit-fill-available;
+    position: absolute;
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 30s linear infinite 0s; 
+}
+.cb-slideshow li div h3 {  
+    font-family: "Lobster";
+    font-size: 90px;
+    padding: 0 3% 0 0;
+    line-height: 120px;
+    color: rgb(135, 1, 1);
+    text-shadow: 4px 3px black;
+}
+
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../img/fondos/f4_h.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../img/fondos/g4.jpg);
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../img/fondos/g3.jpg);
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../img/fondos/g5.jpg);
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../img/fondos/cod.jpg);
+    animation-delay: 24s; 
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+	0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+	    transform: translateX(-400px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+#Inicio{
+	width: 100%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+}
+
+header{
+	width: 1320px;
+	height: 125px;
+}
+
+#logo{
+	width: 42%;
+	height: auto;
+	border: 1px solid transparent;
+	float: left;
+	/*Las tres siguientes propiedades centran el logo*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	text-align: center;
+	color: #870101;
+	text-shadow: 5px 5px black;
+	font-family: "Press Start 2P";
+}
+
+#imagen{
+	margin-right: 100px;
+	float: right;
+}
+
+.menu{
+	width: 17.3%;
+    height: auto;
+    margin-top: 9.4%;
+    margin-left: 15%;
+    color: black;
+    position: absolute;
+
+}
+
+.menu ul{
+	 transform: rotate(-0.5deg);
+}
+
+.menu ul li{
+	border: 1px solid black;
+	list-style: none;
+    padding: 10px 12px;
+	background: #D8D6D6;
+	width: 100%;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	padding: 10px 12px;
+	color: black;
+	font-family: Lobster;
+}
+
+.menu ul li:hover{
+	width: 95%;
+	height: auto;
+	background: linear-gradient(0deg, #D8D6D6, #533FFF);
+	font-size: 18px;
+	font-weight: bold;
+	border-left: 10px solid #333;
+}

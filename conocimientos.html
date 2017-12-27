@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pbAngel</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Press+Start+2P' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://i.icomoon.io/public/temp/22b242f308/UntitledProject/style.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script>
+		jQuery(document).ready(function(){
+			jQuery("input[name=list]").click(function(){
+				jQuery('.skillbar').each(function(){
+					jQuery(this).find('.skillbar-bar').animate({
+						width:jQuery(this).attr('data-percent')
+					},4000);
+				});
+			});
+		});
+		</script>
+		<script type="text/javascript">
+						$(document).ready(function(){
+ 
+							$('.ir-arriba').click(function(){
+								$('body, html').animate({
+									scrollTop: '0px'
+								}, 300);
+							});
+ 
+							$(window).scroll(function(){
+								if( $(this).scrollTop() > 0 ){
+									$('.ir-arriba').slideDown(300);
+								} 
+								else {
+									$('.ir-arriba').slideUp(300);
+								}
+							});
+ 
+						});
+		</script>
+	</head>
+	<body background="img/fondos/tablas.jpg">
+		<div id="Resto">
+			<header>
+				<div id="logo">
+					<h1>Ángel Pavón Baeza</h1>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="sobre_mi.html">Sobre mi</a></li>
+						<li><a href="formacion.html">Formación</a></li>
+						<li><a href="conocimientos.html">Conocimientos</a></li>
+						<li><a href="portfolio.html">Portafolio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<section>
+				<span class="ir-arriba icon-circle-up"></span>
+				<div class="cuerpo">
+					<h1 id="titulo">Conocimientos</h1>
+					<div class="texto">
+						<p>En este apartado podras informarte sobre mi nivel en las diferentes 
+						habilidades que he ido desarrollando en mi vida de forma autodidacta y 
+					    sobre todo durante durante mi periodo en la Escuela Superior de Informatica en Ciudad Real
+					    para el desarrollo de videojuegos y de aplicaciones.</p>
+					    <p>Los niveles los cuales creo son lo más detallado posible son :</p>
+					    <p><b>Nivel 1: </b>Conocimientos básicos</p>
+					    <p><b>Nivel 2: </b>Uso en aplicaciones y diseños a nivel personal</p>
+					    <p><b>Nivel 3: </b>Uso en ámbito académico</p>
+					    <p><b>Nivel 4: </b>Uso en ámbito profesional</p>
+					    <p><b>Nivel 5: </b>Dominio demostrable</p>
+						<ul class="menu_c">
+   							<li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">Lenguajes de Programacion</label>
+   								<ul class="interior">
+         							<!--<li><input type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">Java</label>
+           								<ul class="interior">
+             								<li><a href="#r">Nivel 3</a></li>
+            							</ul>
+         							</li>
+         							<li><input type="checkbox" name="list" id="nivel2-2"><label for="nivel2-2">Python</label>
+           								<ul class="interior">
+             								<li><a href="#r">Nivel 3</a></li>
+            							</ul>
+         							</li>-->
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #d35400;"><span>Java</span></div>
+										<div class="skillbar-bar" style="background: #e67e22;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>
+         							<div class="skillbar clearfix " data-percent="40%">
+										<div class="skillbar-title" style="background: #3805af;"><span>Python</span></div>
+										<div class="skillbar-bar" style="background: #2254e6;"></div>
+										<div class="skill-bar-percent">Nivel 2</div>
+									</div>
+         							<div class="skillbar clearfix " data-percent="40%">
+										<div class="skillbar-title" style="background: #480579;"><span>C#</span></div>
+										<div class="skillbar-bar" style="background: #9322e6;"></div>
+										<div class="skill-bar-percent">Nivel 2</div>
+									</div>
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #039474;"><span>C++</span></div>
+										<div class="skillbar-bar" style="background: #19d07d;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #d35400;"><span>HTML</span></div>
+										<div class="skillbar-bar" style="background: #e67e22;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>	
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #3805af;"><span>CSS</span></div>
+										<div class="skillbar-bar" style="background: #2254e6;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>
+      							</ul>
+   							</li>
+   							<li><input type="checkbox" name="list" id="nivel1-2"><label for="nivel1-2">Editores de Programación</label>
+      							<ul class="interior">
+      								<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #3805af;"><span>Eclipse</span></div>
+										<div class="skillbar-bar" style="background: #2254e6;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>	
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #0a909e;"><span>NetBeans</span></div>
+										<div class="skillbar-bar" style="background: #22e6de;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>
+         							<!--<li><a href="#r">Eclipse</a></li>
+         							<li><input type="checkbox" name="list" id="nivel2-3"><label for="nivel2-3">NetBeans</label>
+           								<ul class="interior">
+             								<li><a href="#r">Nivel 3</a></li>
+            							</ul>
+         							</li>-->
+      							</ul>
+   							</li>
+   							<li><input type="checkbox" name="list" id="nivel1-3"><label for="nivel1-3">Sistemas de gestión de Bases de Datos</label>
+      							<ul class="interior">
+      								<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #9e080d;"><span>Access</span></div>
+										<div class="skillbar-bar" style="background: #f11313;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #0a909e;"><span>MySQL</span></div>
+										<div class="skillbar-bar" style="background: #22e6de;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>	
+         							<div class="skillbar clearfix " data-percent="20%">
+										<div class="skillbar-title" style="background: #d35400;"><span>XAMPP</span></div>
+										<div class="skillbar-bar" style="background: #e67e22;"></div>
+										<div class="skill-bar-percent">Nivel 1</div>
+									</div>
+      							</ul>
+   							</li>
+   							<li><input type="checkbox" name="list" id="nivel1-4"><label for="nivel1-4">Sistemas Operativos</label>
+      							<ul class="interior">
+      								<div class="skillbar clearfix " data-percent="80%">
+										<div class="skillbar-title" style="background: #3805af;"><span>Windows</span></div>
+										<div class="skillbar-bar" style="background: #2254e6;"></div>
+										<div class="skill-bar-percent">Nivel 4</div>
+									</div>	
+         							<div class="skillbar clearfix " data-percent="80%">
+										<div class="skillbar-title" style="background: #9e080d;"><span>Ubuntu</span></div>
+										<div class="skillbar-bar" style="background: #f11313;"></div>
+										<div class="skill-bar-percent">Nivel 4</div>
+									</div>
+      							</ul>
+   							</li>
+   							<li><input type="checkbox" name="list" id="nivel1-5"><label for="nivel1-5">Diseño Web</label>
+      							<ul class="interior">
+      								<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #04730d;"><span>Dreamweaver</span></div>
+										<div class="skillbar-bar" style="background: #22e632;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>	
+         							<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #d35400;"><span>Sublime_Text</span></div>
+										<div class="skillbar-bar" style="background: #e67e22;"></div>
+										<div class="skill-bar-percent">Nivel 3</div>
+									</div>
+      							</ul>
+   							</li>
+   							<li><input type="checkbox" name="list" id="nivel1-6"><label for="nivel1-6">Diseño de Videojuegos</label>
+      							<ul class="interior">
+      								<div class="skillbar clearfix " data-percent="80%">
+										<div class="skillbar-title" style="background: #3e3d3c;"><span>Unity</span></div>
+										<div class="skillbar-bar" style="background: #a9a6a4;"></div>
+										<div class="skill-bar-percent">Nivel 4</div>
+									</div>	
+         							<div class="skillbar clearfix " data-percent="80%">
+										<div class="skillbar-title" style="background: #d35400;"><span>RPG Maker</span></div>
+										<div class="skillbar-bar" style="background: #e67e22;"></div>
+										<div class="skill-bar-percent">Nivel 4</div>
+									</div>
+      							</ul>
+   							</li>
+						</ul>
+						<p id="borde"><p>
+						<p>Ahora un apartado de idiomas que sigue los niveles internacionales</p>
+						<ul class="menu_c">
+							<li><input type="checkbox" name="list" id="nivel1-7"><label for="nivel1-7">Idiomas</label>
+      							<ul class="interior">
+         							<li><p style="font-size:20px">Español (Materna)</p></li>
+         							<li><p style="font-size:20px">Inglés Nivel: B1 Trinity, titulo otorgado por <a href="http://www.tyacentrodeidiomas.com/" target="_blank">Academia T&A-Centro de idiomas de Álcazar de San Juan</a></p></li>
+      							</ul>
+   							</li>
+						</ul>
+						<br>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div>
+                     <div class="final">
+						<ul>
+							<li><a href="https://www.facebook.com/angel.pavonbaeza" target="_blank" class="facebook"><img src="img/icon/icon_facebook.png" alt="icono" width="28px" height="28px"></a></li>
+							<li><a href="https://twitter.com/angelosopb" target="_blank" class="twitter"><img src="img/icon/icon_twitter.png" alt="icono" width="28px" height="28px"></a></li>
+							<li><a href="https://www.instagram.com/angelosopb/" target="_blank" class="instagram"><img src="img/icon/icon_instagram.png" alt="icono" width="28px" height="28px"></a></li>
+							<li><a href="https://www.linkedin.com/in/ángel-pavón-baeza-586011150/" target="_blank" class="linkedin"><img src="img/icon/icon_linkedin.png" alt="icono" width="28px" height="28px"></a></li>
+						</ul>
+					</div>
+					<div class="imagotipo">
+						<img src="img/logo_jue.png" alt="logo" class="imagen">
+					</div>
+					<div class="copyright">Copyright &copy; [2017-2018] Ángel Pavón Baeza</div>
+                </div>
+			</footer>
+		</div>
+	</body>
+</html>
