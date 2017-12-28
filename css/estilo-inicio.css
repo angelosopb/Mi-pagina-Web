@@ -348,8 +348,8 @@ header{
 .menu ul li:hover{
 	width: 95%;
 	height: auto;
-    background: -webkit-linear-gradient(0deg, #D8D6D6, #533FFF);
-	background: linear-gradient(0deg, #D8D6D6, #533FFF);
+    background: -webkit-linear-gradient(0deg, #D8D6D6, #870101);
+	background: linear-gradient(0deg, #D8D6D6, #870101);
 	font-size: 18px;
 	font-weight: bold;
 	border-left: 10px solid #333;

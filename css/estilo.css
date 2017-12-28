@@ -148,6 +148,36 @@ footer{
     text-decoration-color: black;
 }
 
+#fotizq{
+	float:left;
+	margin-left: 10%;
+}
+
+#fotder{
+	float:right;
+	margin-right: 22%;
+}
+
+#fotder h2, #fotizq h2{
+	font-family: "Lobster";
+	color: #870101;
+    text-shadow: 2px 1px black;
+}
+
+#correo{
+	float: left; 
+	text-decoration: none;
+	margin-top: 35px; 
+	color: black; 
+	font-family: "Lobster";
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+#correo:hover{
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 .copyright{
 	padding-top: 90px;
     color: black;
@@ -155,8 +185,8 @@ footer{
 }
 
 .imagotipo{
-	float: right;
-	margin-right: 20%;
+	float: left;
+	margin-left: 10%;
 	margin-top: -17px;
 	border-radius: 50px; 
 }
@@ -171,12 +201,12 @@ footer{
 }
 
 .final ul{
-	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .final ul li{
 	list-style: none;
-	float: left;
+	float: right;
 	padding: 7px;
 	-webkit-transition: 1s;
 	transition: 1s;
@@ -276,13 +306,13 @@ footer{
 
 /*Aqui la parte correspondiente a sobre mi*/
 .bloques{
-	border-bottom: 3px solid #047d57;
+	border-bottom: 3px solid #870101;
 	border-radius: 5%;
 }
 
 .apartado{
 	text-align: center;
-	color: #047d57;
+	color: #870101;
 	font-size: 40px;
 	text-shadow: 3px 0px black;
 }
@@ -295,6 +325,13 @@ footer{
 	font-family: 'Lobster';
 	font-size: 40px;
 	text-align: center;
+	color: #870101;
+	text-shadow: 3px 0px black;
+}
+
+.puntos{
+	color: #870101;
+	text-shadow: 3px 0px black;
 }
 
 /*Aqui empieza el css del apartado de conocimientos*/
@@ -429,7 +466,8 @@ input:checked ~ ul{
 	font-size: 38px;
 	font-family: 'Press Start 2P';
 	color:#870101;
-	text-shadow: 10px 1px black;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	/*text-shadow: 3px 3px #380303;*/
 }
 
 .portafolio-container{
@@ -526,7 +564,8 @@ input:checked ~ ul{
 	color: #870101;
 	text-align: center;
 	font-family: "Press Start 2P";
-	text-shadow: 3px 3px #efeeee;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	/*text-shadow: 3px 3px #380303;*/
 	font-size: 30px;
 }
 
@@ -605,7 +644,8 @@ input:checked ~ ul{
 	color: #870101;
 	text-align: center;
 	font-family: "Press Start 2P";
-	text-shadow: 3px 3px #efeeee;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	/*text-shadow: 3px 3px #380303;*/
 	font-size: 30px;
 }
 
