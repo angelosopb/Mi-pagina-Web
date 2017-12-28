@@ -40,6 +40,7 @@ header{
 	list-style: none;
 	float: left;
 	margin-top: 35.8px;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	border-radius: 80%;
 }
@@ -49,6 +50,7 @@ header{
 	padding: 10px 12px;
 	border: 1px solid #FFFFFF;
 	color: black;
+	background: -webkit-linear-gradient(0deg, #D8D6D6, #fff);
     background: linear-gradient(0deg, #D8D6D6, #fff);
 	box-shadow: 0 10px 15px rgba(0,0,0,3);
 	font-family: Lobster;
@@ -60,6 +62,7 @@ header{
 }
 
 .menu ul li a:hover{
+	background: -webkit-linear-gradient(0deg, #ECEAEA, #B4ABA9);
 	background: linear-gradient(0deg, #ECEAEA, #B4ABA9);
 	box-shadow: 0 20px 25px rgba(0,0,0,3);
 }
@@ -97,7 +100,36 @@ header{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-image: url(../img/to-top1.png);
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?3qwwp1');
+  src:  url('../fonts/icomoon/icomoon.eot?3qwwp1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?3qwwp1') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?3qwwp1') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?3qwwp1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-up:before {
+  content: "\ea41";
 }
 
 /*Aqui empieza el pie de pagina de la pagina web*/
@@ -109,6 +141,7 @@ footer{
     padding:5px 0px;
     clear: both;
     /*background: linear-gradient(90deg, transparent 5%, rgba(0, 0, 0, .9) 20%, rgba(0, 0, 0, .9) 80%, transparent 95%);*/
+    background: -webkit-linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, .6) 20%, rgba(255, 255, 255, .6) 80%, transparent 95%);
     background: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, .6) 20%, rgba(255, 255, 255, .6) 80%, transparent 95%);
     text-align: center;
     color: #fff;
@@ -145,10 +178,12 @@ footer{
 	list-style: none;
 	float: left;
 	padding: 7px;
+	-webkit-transition: 1s;
 	transition: 1s;
 }
 
 .final ul li:hover{
+	-webkit-transform: rotate(360deg);
 	transform:rotate(360deg);
 }
 
@@ -162,7 +197,9 @@ footer{
     border-radius: 6px;
    	width: 50px;
 	text-align: center;
+	-webkit-transform: translate(0, 0);
 	transform: translate(0, 0);
+	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
 	height:50px;
 	cursor:pointer;
@@ -173,6 +210,7 @@ footer{
 }
  
 .final ul li a:active {
+	-webkit-transform: translate(0, 3px);
 	transform: translate(0, 3px);
 }
 
@@ -329,6 +367,8 @@ input:checked ~ ul{
 	background:#eee;
 	height:35px;
 	border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
 	transition:0.4s linear;
 	transition-property:width, background-color;
 }
@@ -395,9 +435,12 @@ input:checked ~ ul{
 .portafolio-container{
 	width:90%;
 	height:auto;
+	display: -webkit-box;
 	display: flex;
+	-webkit-box-pack: justify;
 	justify-content: space-between;
 	margin-left: 5%;
+	-webkit-box-align: center;
     align-items: center;
 }
 
@@ -409,9 +452,11 @@ input:checked ~ ul{
 	position: relative;
 	overflow: hidden;
 	margin: 2%;
+	margin-bottom: 23.750px;
 }
 
 .imagen-proyecto{
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:100%;
 	height: 100%;
@@ -423,7 +468,9 @@ input:checked ~ ul{
 	padding: 20px;
 	background: rgba(0,0,0,0.9);
 	color: #fff;
+	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
+	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
 
@@ -432,10 +479,12 @@ input:checked ~ ul{
 }
 
 .proyecto:hover .texto-proyecto{
+	-webkit-transform: translateY(0%);
 	transform: translateY(0%);
 }
 
 .proyecto:hover .imagen-proyecto{
+	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 }
 
@@ -576,6 +625,7 @@ input:checked ~ ul{
 
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 	margin-left: 10px;
 }
@@ -588,7 +638,9 @@ input:checked ~ ul{
 
 /* flip speed goes here */
 .flipper {
+	-webkit-transition: 0.6s;
 	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	position: relative;
 }
@@ -606,12 +658,14 @@ input:checked ~ ul{
 	background: white;
 	z-index: 2;
 	/* for firefox 31 */
+	-webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
 
 /* Panel trasero enlace */
 .back {
 	background: white;
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 .back h3 {
